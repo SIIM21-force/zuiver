@@ -1,0 +1,58 @@
+.visualizer-container {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.visualizer-canvas-area {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 40px 20px 20px;
+}
+
+/* ── Mode Toggle ── */
+
+.visualizer-mode-toggle {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    display: flex;
+    gap: 2px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    padding: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.visualizer-container:hover .visualizer-mode-toggle {
+    opacity: 1;
+}
+
+.viz-toggle-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+}
+
+.viz-toggle-btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.viz-toggle-btn.active {
+    background: rgba(168, 85, 247, 0.2);
+    color: #c084fc;
+}
