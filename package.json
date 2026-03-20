@@ -1,5 +1,5 @@
 {
-  "name": "klank",
+  "name": "zuiver",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -40,7 +40,7 @@
   "main": "dist-electron/main.js",
   "build": {
     "appId": "com.klank.app",
-    "productName": "Klank",
+    "productName": "ZUIVER",
     "directories": {
       "output": "release"
     },
@@ -57,7 +57,7 @@
       "oneClick": false,
       "perMachine": false,
       "allowToChangeInstallationDirectory": true,
-      "shortcutName": "Klank"
+      "shortcutName": "ZUIVER"
     }
   }
 }

@@ -1,9 +1,9 @@
 // @see - https://www.electron.build/configuration/configuration
 {
   "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  "appId": "com.klank.app",
+  "appId": "com.zuiver.app",
   "asar": true,
-  "productName": "Klank",
+  "productName": "ZUIVER",
   "directories": {
     "output": "release/${version}"
   },
@@ -23,10 +23,12 @@
     "artifactName": "${productName}-Windows-${version}-Setup.${ext}"
   },
   "nsis": {
+    "installerIcon": "build/icon.ico",
+    "uninstallerIcon": "build/icon.ico",
     "oneClick": false,
     "perMachine": false,
     "allowToChangeInstallationDirectory": true,
     "deleteAppDataOnUninstall": false,
-    "shortcutName": "Klank"
+    "shortcutName": "ZUIVER"
   }
 }

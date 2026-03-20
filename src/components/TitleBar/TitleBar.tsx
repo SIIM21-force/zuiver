@@ -19,7 +19,7 @@ export const TitleBar: React.FC = () => {
     return (
         <div className="title-bar">
             <div className="title-bar-drag">
-                <span className="title-bar-text">KLANK</span>
+                <span className="title-bar-text">ZUIVER</span>
             </div>
             <div className="title-bar-controls">
                 <button className="title-btn" onClick={handleMinimize} title="Minimize">
